@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  hyperf:
+    image: hyperf/hyperf:8.1-alpine-v3.16-swoole
+    container_name: hyperf-skeleton
+    ports:
+      - "9501:9501"
+    volumes:
+      - .:/opt/www
+    working_dir: /opt/www
+    command: php bin/hyperf.php start
+    environment:
+      - APP_ENV=development
+      - MOCK_MODE=true
+    networks:
+      - hyperf-network
+
+networks:
+  hyperf-network:
+    driver: bridge
