@@ -1,13 +1,14 @@
 <?php
 
 declare(strict_types=1);
-/**
- * This file is part of Hyperf.
- *
- * @link     https://www.hyperf.io
- * @document https://hyperf.wiki
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
- */
+
+use App\Service\PTUserDataService;
+use App\Service\PTProductDataService;
+
 return [
+    // 用户数据透传服务
+    PTUserDataService::class => PTUserDataService::class,
+    
+    // 商品数据透传服务
+    PTProductDataService::class => PTProductDataService::class,
 ];

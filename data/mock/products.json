@@ -1,0 +1,59 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 17 测试",
+      "price": 5999.00,
+      "stock": 100,
+      "category": "手机",
+      "brand": "Apple",
+      "status": "active",
+      "created_at": "2024-01-01 00:00:00",
+      "updated_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 2,
+      "name": "MacBook Pro",
+      "price": 12999.00,
+      "stock": 50,
+      "category": "电脑",
+      "brand": "Apple",
+      "status": "active",
+      "created_at": "2024-01-01 00:00:00",
+      "updated_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 3,
+      "name": "AirPods Pro",
+      "price": 1999.00,
+      "stock": 200,
+      "category": "耳机",
+      "brand": "Apple",
+      "status": "active",
+      "created_at": "2024-01-01 00:00:00",
+      "updated_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 4,
+      "name": "iPad Air",
+      "price": 4399.00,
+      "stock": 80,
+      "category": "平板",
+      "brand": "Apple",
+      "status": "active",
+      "created_at": "2024-01-01 00:00:00",
+      "updated_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": 5,
+      "name": "Apple Watch",
+      "price": 2999.00,
+      "stock": 150,
+      "category": "手表",
+      "brand": "Apple",
+      "status": "active",
+      "created_at": "2024-01-01 00:00:00",
+      "updated_at": "2024-01-01 00:00:00"
+    }
+  ]
+}
