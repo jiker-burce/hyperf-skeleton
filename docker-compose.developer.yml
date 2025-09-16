@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # 程序员A的开发环境
+  developer-a:
+    build:
+      context: .
+      dockerfile: Dockerfile.developer
+      args:
+        MODULE_NAME: module-a
+        DEVELOPER_NAME: 程序员A
+    container_name: hyperf-developer-a
+    ports:
+      - "9501:9501"
+    volumes:
+      - ./modules/module-a:/var/www/html/modules/module-a
+      - ./app:/var/www/html/app
+      - ./config:/var/www/html/config
+      - ./bin:/var/www/html/bin
+    environment:
+      - MODULE_NAME=module-a
+      - DEVELOPER_NAME=程序员A
+    networks:
+      - hyperf-dev
+
+  # 程序员B的开发环境
+  developer-b:
+    build:
+      context: .
+      dockerfile: Dockerfile.developer
+      args:
+        MODULE_NAME: module-b
+        DEVELOPER_NAME: 程序员B
+    container_name: hyperf-developer-b
+    ports:
+      - "9502:9501"
+    volumes:
+      - ./modules/module-b:/var/www/html/modules/module-b
+      - ./app:/var/www/html/app
+      - ./config:/var/www/html/config
+      - ./bin:/var/www/html/bin
+    environment:
+      - MODULE_NAME=module-b
+      - DEVELOPER_NAME=程序员B
+    networks:
+      - hyperf-dev
+
+  # 程序员C的开发环境
+  developer-c:
+    build:
+      context: .
+      dockerfile: Dockerfile.developer
+      args:
+        MODULE_NAME: module-c
+        DEVELOPER_NAME: 程序员C
+    container_name: hyperf-developer-c
+    ports:
+      - "9503:9501"
+    volumes:
+      - ./modules/module-c:/var/www/html/modules/module-c
+      - ./app:/var/www/html/app
+      - ./config:/var/www/html/config
+      - ./bin:/var/www/html/bin
+    environment:
+      - MODULE_NAME=module-c
+      - DEVELOPER_NAME=程序员C
+    networks:
+      - hyperf-dev
+
+networks:
+  hyperf-dev:
+    driver: bridge
