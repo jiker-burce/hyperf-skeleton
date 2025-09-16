@@ -1,3 +1,9 @@
 [submodule "modules/module-a"]
 	path = modules/module-a
 	url = git@github.com:jiker-burce/hyperf-module-a.git
+[submodule "modules/module-b"]
+	path = modules/module-b
+	url = git@github.com:jiker-burce/hyperf-module-b.git
+[submodule "modules/module-c"]
+	path = modules/module-c
+	url = git@github.com:jiker-burce/hyperf-module-c.git

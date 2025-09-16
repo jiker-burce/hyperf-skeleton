@@ -41,13 +41,13 @@ cd hyperf-skeleton
 ### 2. 按需拉取模块
 ```bash
 # 拉取用户管理模块
-git clone <module-a仓库地址> modules/module-a
+git submodule add <module-a仓库地址> modules/module-a
 
 # 拉取商品管理模块
-git clone <module-b仓库地址> modules/module-b
+git submodule add <module-b仓库地址> modules/module-b
 
 # 拉取订单管理模块
-git clone <module-c仓库地址> modules/module-c
+git submodule add <module-c仓库地址> modules/module-c
 ```
 
 ### 3. 启动服务
